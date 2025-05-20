@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Firdhan - Bigdata Landing Page By Firdhan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Siimple
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/free-bootstrap-landing-page/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .small-button {
+        padding: 5px 10px;       /* Ukuran padding untuk button kecil */
+        background-color: white; /* Background putih */
+        color: black;            /* Warna teks hitam */
+        border: 1px solid black; /* Border hitam */
+        border-radius: 5px;      /* Sudut tidak runcing (melingkar) */
+        font-size: 12px;         /* Ukuran font kecil */
+        cursor: pointer;         /* Gaya kursor saat dihover */
+    }
+    .small-button:hover {
+        background-color: #000000; /* Warna latar sedikit lebih gelap saat hover */
+        color:rgb(255, 255, 255);
+    }
+</style>
+</head>
+
+<body>
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "0dd51fa7-394a-4519-8ca6-aa35ff9422a7",
+        apiHost: "http://localhost:3000",
+        chatflowConfig: {
+            /* Chatflow Config */
+        },
+        observersConfig: {
+            /* Observers Config */
+        },
+        theme: {
+            button: {
+                backgroundColor: '#3B81F6',
+                right: 20,
+                bottom: 20,
+                size: 48,
+                dragAndDrop: true,
+                iconColor: 'white',
+                customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                autoWindowOpen: {
+                    autoOpen: true,
+                    openDelay: 2,
+                    autoOpenOnMobile: false
+                }
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: 'Halo Teman, Tanyakan Pada Chatbot 👋!',
+                tooltipBackgroundColor: 'black',
+                tooltipTextColor: 'white',
+                tooltipFontSize: 16
+            },
+            disclaimer: {
+                title: 'Disclaimer',
+                message: "By using this chatbot, you agree to the <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Terms & Condition</a>",
+                textColor: 'black',
+                buttonColor: '#3b82f6',
+                buttonText: 'Start Chatting',
+                buttonTextColor: 'white',
+                blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
+                backgroundColor: 'white'
+            },
+            customCSS: ``,
+            chatWindow: {
+                showTitle: true,
+                showAgentMessages: true,
+                title: 'Flowise Bot',
+                titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                welcomeMessage: 'Hello! This is custom welcome message',
+                errorMessage: 'This is a custom error message',
+                backgroundColor: '#ffffff',
+                backgroundImage: 'enter image path or link',
+                height: 700,
+                width: 400,
+                fontSize: 16,
+                starterPrompts: [
+                    "What is a bot?",
+                    "Who are you?"
+                ],
+                starterPromptFontSize: 15,
+                clearChatOnReload: false,
+                sourceDocsTitle: 'Sources:',
+                renderHTML: true,
+                botMessage: {
+                    backgroundColor: '#f7f8ff',
+                    textColor: '#303235',
+                    showAvatar: true,
+                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
+                },
+                userMessage: {
+                    backgroundColor: '#3B81F6',
+                    textColor: '#ffffff',
+                    showAvatar: true,
+                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
+                },
+                textInput: {
+                    placeholder: 'Type your question',
+                    backgroundColor: '#ffffff',
+                    textColor: '#303235',
+                    sendButtonColor: '#3B81F6',
+                    maxChars: 50,
+                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    autoFocus: true,
+                    sendMessageSound: true,
+                    sendSoundLocation: 'send_message.mp3',
+                    receiveMessageSound: true,
+                    receiveSoundLocation: 'receive_message.mp3'
+                },
+                feedback: {
+                    color: '#303235'
+                },
+                dateTimeToggle: {
+                    date: true,
+                    time: true
+                },
+                footer: {
+                    textColor: '#303235',
+                    text: 'Powered by',
+                    company: 'FirdBot',
+                    companyLink: 'https://flowiseai.com'
+                }
+            }
+        }
+    })
+</script>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div class="logo">
+        <h1><a href="index.html">KELUARGA BAHAGIA PAK MOE</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="#header" class="scrollto">Home</a></li>
+          <li><a href="#about" class="scrollto">About Us</a></li>
+          <li><a href="http://localhost/materi/chatbot/" class="scrollto">Chat Dengan BOT</a></li>
+          <li class="drop-down"><a href="">CEO CONTACTS</a>
+            <ul>
+              <li><a href="https://wa.me/089639770802">Whatsapp</a></li>
+              <li class="drop-down"><a href="#">Owner Social Media</a>
+                <ul>
+                  <li><a href="https://facebook.com/danar007">Owner Facebook</a></li>
+                  <li><a href="https://www.instagram.com/firdhanr27/?hl=en">Owner Instagram</a></li>
+                  <li><a href="https://www.youtube.com/channel/UCiH3x7DCZu-ykbomDEMYZEA/search">Owner Youtube</a></li>
+                  <li><a href="https://www.tiktok.com/@firdhan27">Owner TikTok</a></li>
+                  <li><a href="https://twitter.com/DanarFR/status/444052402618920960">Owner Twiter</a></li>
+                </ul>
+              </li>
+              <li><a href="https://chat.openai.com/?model=text-davinci-002-render-sha">Chat GPT Open AI</a></li>
+              <li><a href="https://www.youtube.com/">Youtube</a></li>
+              <li><a href="https://open.spotify.com/intl-id">Spotify</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact" class="scrollto">Contact Us</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Selamat Datang Di Website Keluarga</h1>
+      <h2>KELUARGA BAHAGIA PAK MOE</h2>
+
+        
+      </form>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/about-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h3>About Us</h3>
+            <p class="fst-italic">
+              Nama-nama Anak Kami
+            </p>
+            <ul>
+              <li><i class="bx bx-check-double"></i> DANAR FIRDHAN ROICHAN</li>
+              <li><i class="bx bx-check-double"></i> DARIS ARBIN ANUGERAH</li>
+              <li><i class="bx bx-check-double"></i> DENAIA LAKSITA ADIBA</li>
+            </ul>
+            <p>
+              Tentang Kami – Keluarga Bahagia Pak Moejiyanto
+Selamat datang di halaman resmi keluarga kecil kami!
+
+Kami adalah Keluarga Pak Moejiyanto, sebuah keluarga sederhana yang hidup dalam semangat kebersamaan, kasih sayang, dan kebahagiaan. Berawal dari cinta yang tulus antara Pak Moejiyanto dan istrinya tercinta, keluarga ini tumbuh menjadi tempat yang penuh kehangatan, tawa, dan nilai-nilai kehidupan yang kuat.
+
+Dengan prinsip hidup yang sederhana namun bermakna—"hidup rukun, saling mendukung, dan selalu bersyukur"—kami membangun rumah tangga yang tidak hanya menjadi tempat tinggal, tapi juga menjadi tempat tumbuhnya cinta dan harapan.
+
+Keseharian kami diwarnai dengan berbagai kegiatan, mulai dari memasak bersama, berkebun, beribadah, hingga berbagi cerita di meja makan. Tak lupa, kami juga selalu meluangkan waktu untuk liburan keluarga, menyusuri alam, atau sekadar menikmati sore di teras rumah.
+
+Bagi kami, keluarga adalah tempat kembali, tempat belajar, dan tempat terbaik untuk menjadi diri sendiri. Melalui halaman ini, kami ingin berbagi sedikit cerita, momen, dan inspirasi dari perjalanan kami sebagai keluarga.
+
+Terima kasih telah berkunjung. Semoga kebahagiaan dan cinta selalu menyertai keluarga Anda juga.
+
+
+Salam hangat,
+<b>Pak Moejiyanto</b>           
+
+</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <img src="assets/img/why-us-1.jpg" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="bx bx-book-reader"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://bobo.grid.id/read/083632631/10-pakaian-adat-berbagai-daerah-di-indonesia-materi-kelas-3-sd-tema-5?page=all">Quotes Danar</a></h5>
+                <p class="card-text">"Tak perlu mewah, asal bersama. Di sinilah rumah sebenarnya: hati yang saling menyayangi."</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <img src="assets/img/why-us-2.jpg" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="bx bx-calendar-edit"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://rimbakita.com/rumah-adat/">Quotes Daris</a></h5>
+                <p class="card-text">"Langkah boleh ke mana saja, tapi senyum dan tawa ini selalu kembali ke satu tujuan: kebersamaan." </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <img src="assets/img/why-us-3.jpg" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="bx bx-landscape"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://katadata.co.id/iftitah/berita/617b75f050ff7/20-makanan-khas-indonesia-dan-asalnya-yang-menarik-untuk-disantap">Quotes Denaia</a></h5>
+                <p class="card-text">"Bahagia itu sederhana—tertawa bersama, saling mendengarkan, dan menikmati setiap detik kebersamaan."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Frequenty Asked Questions Section ======= -->
+    <section class="faq">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Pertanyaan-pertanyaan yang sering diajukan</h2>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">Dikota mana kalian tinggal? <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Kota Sukabumi
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">Apa makanan favorit keluarga kalian? <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Seafood, Pizza, Spagetthi
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">Apa Alasan keluarga kalian Bahagia?? <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Karena kita selalu bersyukur
+              </p>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End Frequenty Asked Questions Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-5 mb-5 mb-md-0">
+            <div class="info">
+              <div class="address">
+                <i class="bx bx-map"></i>
+                <p>Kota Sukabumi<br>Lembursitu Jawabarat Indonesia, KM 7 NO 60</p>
+              </div>
+
+              <div class="email">
+                <i class="bx bx-envelope"></i>
+                <p>danarfirdhan@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bx bx-phone-call"></i>
+                <p>+62 896 3977 0802</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://twitter.com/DanarFR/status/444052402618920960" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://facebook.com/danar007" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/firdhanr27/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://chat.openai.com/?model=text-davinci-002-render-sha" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-7">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Firdhan Chatbot V-AI Sejarah Indonesia</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-landing-page/ -->
+        Designed by <a href="https://facebook.com/danar007/">Danar Firdhan Roichan</a>
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
